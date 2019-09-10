@@ -7,6 +7,7 @@ import java.util.Arrays;
 
 import org.junit.Test;
 
+
 public class TestRummyCode {
 
     /*
@@ -377,6 +378,7 @@ public class TestRummyCode {
         PlayableRummy rummy = create("Alice", "Bob");
         rummy.shuffle(1L);
 
+        rummy.rearrange("QH");
         rummy.rearrange("2M");
         rummy.rearrange("AM");
         rummy.rearrange("2S");
