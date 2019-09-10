@@ -157,12 +157,14 @@ public class TestRummyCode {
     @Test
     public void test_meld_exception_1() {
         PlayableRummy rummy = create("Alice", "Bob", "Claire");
-
+        
+        shuffle_1(rummy);
+        
         rummy.initialDeal();
         rummy.drawFromDeck();
 
         try {
-            rummy.meld("AC", "4C", "7C");
+            rummy.meld("AM", "JM", "8M");
             fail("Meld exception 1");
         } catch (RummyException e) {
             assertTrue("Throws exception for not valid meld", e.kind == RummyException.NOT_VALID_MELD);
