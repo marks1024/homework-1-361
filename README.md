@@ -1,4 +1,4 @@
-# 361 Fall 2019, Homework 1
+# 361 Fall 2020, Homework 1
 
 This is a starter Java project for Homework 1.  The assignment has two problems: key word in context and a card game similar to rummy.  A description of each of the problems is given below.  
 
