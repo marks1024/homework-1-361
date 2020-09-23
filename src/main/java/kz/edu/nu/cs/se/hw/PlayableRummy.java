@@ -200,7 +200,7 @@ public interface PlayableRummy {
      * player must have the cards in their hand. 
      * The game must be in the MELD or RUMMY step.
      * 
-     * @param cards Card[] cards to form new meld
+     * @param cards String[] cards to form new meld
      * @throws RummyException
      */
     public void meld(String... cards);
@@ -213,7 +213,7 @@ public interface PlayableRummy {
      * The game must be in the MELD or RUMMY step.
      * 
      * @param meldIndex int reference to a current meld
-     * @param cards     Card[] cards to add to meld
+     * @param cards     String[] cards to add to meld
      * @throws RummyException
      */
     public void addToMeld(int meldIndex, String... cards);
@@ -250,7 +250,7 @@ public interface PlayableRummy {
      * The player may not discard a card drawn from the discard pile on the same
      * turn.
      * 
-     * @param card Card card to discard
+     * @param card String card to discard
      * @throws RummyException
      */
     public void discard(String card);
