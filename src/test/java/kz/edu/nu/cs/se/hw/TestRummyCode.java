@@ -666,7 +666,8 @@ public class TestRummyCode {
         rummy.drawFromDiscard();
         rummy.meld("AC", "2C", "3C", "4C", "5C", "6C");
         rummy.addToMeld(0, "7C", "8C", "9C", "10C", "JC");
-
+        rummy.finishMeld();
+        
         assertTrue("Game 6, turn 1, melds", rummy.getNumMelds() == 1);
         assertTrue("Game 6, turn 1, deck", rummy.getNumCardsInDeck() == 44);
         assertTrue("Game 6, turn 1, meld", rummy.getMeld(0).length == 11);
